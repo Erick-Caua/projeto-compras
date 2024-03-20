@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle - caixa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Saída de caixa - Prototype sem API</h1>
+
+        <div class="formcontrol">
+            <form>
+                <label>
+                    <p>Nome do produto:</p>
+                    <input type="text" id="textaccount" required>
+                </label>
+                <label>
+                    <p>Valor do produto:</p>
+                    <input type="number" id="valueaccount" min=1 required>
+                </label>
+                <label>
+                    <p>Quantidade do produto</p>
+                    <input type="number" id="quantityAccount" required>
+                </label>
+                <br>
+
+                <div class="buttons">
+                    <button class="awesome-button">
+                        <span>Faturar</span>
+                        <span class="icon">&rarr;</span>
+                        <span class="shine"></span>
+                    </button>
+
+                    <button class="awesome-button fechar1">
+                        <span>Fechar</span>
+                        <span class="icon">&rarr;</span>
+                        <span class="shine"></span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="resp">
+                <p id="numbernfe">NF-e cod.: <span id="spanresp"></span></p>
+                <pre id="resp1"></pre>
+                <pre id="resp2"></pre>
+            </div>
+        </div>
+        <!--CLOSEDBOX-->
+        <div class="fecharcaixa hidden">
+            <div class="invoice">
+
+                <pre class="totalprod"></pre>
+                <pre class="totalitens"></pre>
+                <pre class="respto1"></pre>
+
+            </div>
+            <div class="resp">
+                <p id="numbernfe">Forma de pagamento &rarr;</p>
+                <form class="closedbox">
+                    <label>
+                        <input type="checkbox" class="boxcheck pgat">
+                        <p>Dinheiro:</p>
+                        <input type="number" id="valuePgmt">
+                    </label>
+                    <label>
+                        <input type="checkbox" class="boxcheck">
+                        <p>Cartão - N° comprovante:</p>
+                        <input type="number">
+                    </label>
+                </form>
+                <button class="awesome-button pgatend">
+                    <span>Realizar recebimento</span>
+                    <span class="shine"></span>
+                </button>
+
+                <div class="divresp">
+                    <pre class="respto2"></pre>
+                    <pre class="respto3"></pre>
+                </div>
+                <div class="purchaseCompleted hidden">
+                    <div class="buttonControl">
+                        <button class="awesome-button print ">
+                            <span>Imprimir comprovante</span>
+                            <span class="icon">&rarr;</span>
+                            <span class="shine"></span>
+                        </button>
+                        <button class="awesome-button newBuy">
+                            <span>Nova compra</span>
+                            <span class="icon">&ldsh;</span>
+                            <span class="shine"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

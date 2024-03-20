@@ -1,0 +1,205 @@
+body {
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 0 auto;
+
+    p {
+        font-weight: bold;
+
+    }
+
+    h1 {
+        border-bottom: 1px solid black;
+    }
+
+    form>label>input {
+        padding: 5px;
+        border: none;
+        background-color: rgb(243, 220, 187);
+        transition: transform 0.3s ease;
+
+
+    }
+
+    #textaccount:hover,
+    #valueaccount:hover,
+    #quantityAccount:hover {
+        border: none;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1)
+    }
+
+
+
+    .formcontrol {
+        display: flex;
+        align-items: start;
+        width: 450px;
+
+        .awesome-button {
+            margin-top: 17px;
+        }
+
+
+        .resp {
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+
+}
+
+.awesome-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto */
+.awesome-button span:first-child {
+    transition: transform 0.3s ease;
+}
+
+/* Ícone */
+.awesome-button .icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Shine effect */
+.awesome-button .shine {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(45deg);
+    transition: top 0.5s ease, left 0.5s ease;
+}
+
+/* Efeito de hover no botão */
+.awesome-button:hover {
+    background-color: #105c14;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de foco */
+.awesome-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 112, 55, 0.4);
+}
+
+/* Efeito de clique */
+.awesome-button:active {
+    transform: translateY(2px);
+}
+
+
+/* Efeito de hover no ícone */
+.awesome-button:hover .icon {
+    transform: translateX(5px);
+}
+
+/* Efeito de hover no brilho */
+.awesome-button:hover .shine {
+    top: -20%;
+    left: -20%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
+/* Efeito para mudar de container na tela*/
+.fecharcaixa {
+    justify-content: center;
+    width: 450px;
+
+    .resp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form>label {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+
+
+    }
+
+    input[type="number"] {
+        margin: 10px;
+
+    }
+
+    .pgatend {
+        margin: 20px 0px 20px;
+    }
+
+    pre {
+        margin: 0px;
+    }
+
+    .fechar1 {
+        margin-top: 50px;
+    }
+
+    .purchaseCompleted {
+
+        .buttonControl {
+            display: flex;
+            gap: 5px;
+            height: 60px;
+
+            .print {
+                margin-top: 20px;
+                width: 50%;
+
+            }
+
+            .newBuy {
+                margin-top: 20px;
+                width: 50%;
+            }
+        }
+
+
+
+    }
+
+}
