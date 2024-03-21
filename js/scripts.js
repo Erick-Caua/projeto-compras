@@ -70,7 +70,7 @@ function pagmto(n, m) {
     if (m < n) {
         alert(` Valor pago: R$${m} não é suficiente para pagar suas compras! 
         Valor das compras: R$ ${n}
-        Falta pagar R$ ${n - m}`)
+        Valor que falta: R$ ${n - m}`)
     } else {
         respto2.innerText = `Valor total pago: R$${m}`;
         respto3.innerText = `Troco: R$${soma}`;
@@ -124,9 +124,13 @@ read.addEventListener("click", (e) => {
 
 fecharcx.addEventListener("click", (e) => {  //botão de mudar para prox card
     e.preventDefault();
+    if (resposta === "") {
+        alert('Nenhuma compra feita')
+    } else {
+        addclasse()
+        invoice()
 
-    addclasse()
-    invoice()
+    }
 
 });
 
